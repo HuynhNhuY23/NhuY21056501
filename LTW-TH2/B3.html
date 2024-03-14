@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Bài 3</title>
+</head>
+<body>
+    <header>
+        <h1> LIÊN HỆ </h1>
+        <hr>
+    </header>
+    <div class="container">
+        <section class="thongtin">
+            <h3> Thông tin</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Kp. 6, P. Linh Trung, Tp. Thủ Đức, Tp. HCM </i>
+                <p><i class="fa-regular fa-envelope"></i> info@uit.edu.vn</p>
+                <p><i class="fa-solid fa-phone"></i> +84 28 372 52002 </p>
+        </section>
+        <section class="lienhe">
+            <h3> Hãy liên lạc với chúng tôi bất cứ khi nào!!!</h3>
+            <form action="#">
+                <input type="text" id="hoten" placeholder="Họ và tên" required>
+                <input type="email" id="mail" placeholder="Địa chỉ e-mail" required>
+                <input type="text" id="tieude" placeholder="Tiêu đề bài viết" required>
+                <input type="text" id="noidung" placeholder="Nội dung cần gửi" required>
+                <button onclick="gui()">GỬI TIN NHẮN <i class="fa-brands fa-facebook-messenger"></i> </button>
+            </form>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+<style>
+  .container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.thongtin, .lienhe {
+    flex: 1;
+    padding: 10px;
+}
+.thongtin p {
+    color: #696969;
+}
+h1 {
+    color: blue;
+    text-indent: 250px;
+}
+hr {
+    border-color: red;
+    border-top: 5;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.container input{   
+    width: 500px;
+    height: 40px;
+    margin-top: 10px;
+}
+.container button {
+    margin-top: 10px;
+    width: 200px;
+    height: 35px;
+    background-color: lightskyblue;
+    color: white;
+    border-color: lightskyblue;
+    cursor: pointer;
+}
+#noidung {
+    height: 100px;
+}
+.lienhe h3{
+    color: darkviolet;
+</style>
+</html>
